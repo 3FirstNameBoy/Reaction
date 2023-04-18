@@ -11,7 +11,7 @@ export const setUsername = (username) => ({
   username,
 });
 
-export const CreateReaction = ({ type, emoji, username, messageId }) => ({
+export const createReaction = ({ type, emoji, username, messageId }) => ({
   type,
-  item: { id: uuidv4(), timestamp: Date.now(), emoji, username, messageId }
-})
+  item: { id: uuidv4(), timestamp: Date.now(), emoji, username, messageId },
+});
