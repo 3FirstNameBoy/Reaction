@@ -2,6 +2,7 @@ import React, { useReducer, useEffect } from "react";
 import reducer, { initialState } from "../state/reducer";
 import PublishMessage from "./PublishMessage";
 import MessageBoard from "./MessageBoard";
+import SetUsername from "./SetUsername";
 import Context from "../context";
 import PubSub from "../pubsub";
 
@@ -27,6 +28,7 @@ function App() {
   return (
     <Context.Provider value={{ state, dispatch, pubsub }}>
       <h2>Reaction</h2>
+      <SetUsername />
       <hr />
       <PublishMessage />
       <hr />
